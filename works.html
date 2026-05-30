@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>works</title>
+<link rel="stylesheet" href="works_stylesheet.css">
+</head>
+<body>
+ <a href="index.html" class="header">
+      <h1>祥</h1>
+      <div class="subtitle">my honest thoughts</div>
+</a>
+  <div class="container">
+    <div class="sidebar">
+      <h1>archive</h1>
+      <a href="about.html">about</a>
+      <a href="journal.html">journal</a>
+      <a href="music.html">music</a>
+      <a href="works.html">works</a>      
+      <a href="log.html">log</a>
+      <a href="inspiration.html">inspiration</a>
+      <hr>
+      <a href="contact.html">contact</a>
+    </div>
+    <div class="content">
+      <h2>works</h2>
+      <p>I draw!</p>
+      <p>pw: my name in lowercase, no space</p>
+     <!-- FILTER SYSTEM -->
+<p id="filter">
+  <strong>Filter:</strong>
+  <button class="tag" onclick="filterPosts('bantaka')">#bantaka</button>
+  <button class="tag" onclick="filterPosts('gintaka')">#gintaka</button>
+  <button class="tag" onclick="filterPosts('zurataka')">#zurataka</button>
+    <button class="tag" onclick="filterPosts('artsummary')">#artsummary</button>
+</p>
+<button onclick="showAll()">Show All</button>
+     <hr>
+  <!-- 30 May 26 -->
+  <div class="entry" data-tags="artsummary">
+    <div class="tags">
+      Tags:
+      <a onclick="filterPosts('artsummary')"> #artsummary</a>
+    </div>
+    <div class="date">30 May 26</div>
+    <h3>
+      <a href="posts/30may26_works.html">
+      art summary
+      </a>
+    </h3>
+    <p>a summary of my art journey in late 2025 and early 2026</p>
+   </div>
+
+    <!-- 19mar26 -->
+  <div class="entry" data-tags="oc resources"> 
+  <div class="tags">
+    Tags:
+    <a onclick="filterPosts('oc')"> #oc</a>
+    <a onclick="filterPosts('resources')"> #recources</a>
+  </div>
+
+  <div class="date">19 Mar 26</div>
+  <h3>
+    <a href="posts/19mar26_works.html">
+    Retro Effect Website
+    </a>
+  </h3>
+  <p>An website that adds retro effect on your image</p>
+  </div>
+    </div>
+    </div></div>
+        <div class="footer">an-monia · 祥 · independent archive</div>   
+      
+<!-- SCRIPT -->
+<script src="works_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+    body {
+      font-family: 'Courier New', monospace;
+      margin: 0;
+      /* infinite star background */
+      background-image: url("https://i.postimg.cc/13wQ02Gk/starry.jpg");
+      background-repeat: repeat;
+      background-size: 600px;
+      background-attachment: fixed;
+      color: #003049;
+    }
+    .header {
+      display: block;
+      text-align: center;
+      padding: 20px;
+      text-decoration: none;
+      color: #F4EDE4;
+    }
+    .header h1 {
+      margin: 0 auto;
+      letter-spacing: 0.25em;
+      font-weight: 400;
+      border-bottom: 1px solid rgba(244,237,228,0.6);
+      display: inline-block;
+      padding-bottom: 5px;
+      font-size: 22px;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      margin: 30px auto;
+    }
+    .sidebar {
+      width: 340px;   /* smaller */
+      height: 500px;  /* smaller */
+      position: relative;
+
+      box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+      overflow: hidden;
+    }
+    /* rotated postcard */
+    .sidebar::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 500px;
+      height: 340px;
+      background-image: url("https://i.postimg.cc/ZqjK3XZV/16.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      transform: translate(-50%, -50%) rotate(-90deg);
+      z-index: 0;
+    }
+    .content {
+      position: absolute;
+      top: 50px;
+      left: 30px;
+      right: 30px;
+      bottom: 30px;
+      text-align: center;
+      z-index: 1;
+    }
+    .sidebar-logo {
+      width: 140px;
+      margin: 0 auto 12px;
+      border: 2px solid #780000;
+    }
+    .content h1 {
+      font-size: 16px;
+      letter-spacing: 0.12em;
+      color: #C1121F;
+      margin-bottom: 12px;
+    }
+    .content a {
+      display: block;
+      margin: 6px 0;
+      font-size: 13px;
+      text-decoration: none;
+      color: #003049;
+    }
+    .content a:hover {
+      color: #C1121F;
+      text-decoration: underline;
+    }
+    .content hr {
+      border: none;
+      border-top: 1px solid rgba(0,0,0,0.3);
+      margin: 12px 0;
+    }

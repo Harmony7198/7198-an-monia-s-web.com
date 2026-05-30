@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Summary</title>
+    <link rel="stylesheet" href="../works_stylesheet.css">
+</head>
+<body>
+    <div class="entry" data-tags="artsummary"> 
+    <div class="tags">
+    Tags:
+    <a onclick="filterPosts('artsummary')"> #artsummary</a>
+  </div>
+  <div class="date">30 May 26</div>
+<div class="gallery" id="gallery"></div>
+
+<script>
+const images = [
+  "https://i.postimg.cc/FK0V2qMZ/16nov25b.jpg",
+  "https://i.postimg.cc/vm5tpjJv/25dec25b.jpg",
+  "https://i.postimg.cc/VkxFZ1VV/25dec25c.jpg",
+  "https://i.postimg.cc/52hmK1RP/25dec25d.jpg",
+  "https://i.postimg.cc/d0GjzXbn/26dec25b.jpg",
+  "https://i.postimg.cc/xdL3W7w4/28dec25.jpg",
+  "https://i.postimg.cc/FzmN3mXY/29dec25b.jpg",
+  "https://i.postimg.cc/T1GfgGvp/29dec25d.jpg",
+  "https://i.postimg.cc/4yZsVZRd/29dec25e.jpg",
+  "https://i.postimg.cc/90VCZVHz/30dec25.jpg",
+  "https://i.postimg.cc/nrkZ15nj/30dec25b.jpg",
+  "https://i.postimg.cc/gJp9QknR/1jan26.jpg",
+  "https://i.postimg.cc/ydKqtYkT/31dec25b.jpg",
+  "https://i.postimg.cc/8cfCD5tF/2jan26.jpg",
+  "https://i.postimg.cc/SKw1bsKP/3jan26.jpg",
+  "https://i.postimg.cc/HLfv1xLh/3jan26b.jpg",
+  "https://i.postimg.cc/3wPfQRwf/4jan26.jpg",
+  "https://i.postimg.cc/SKw1bsK5/4jan26b.jpg",
+  "https://i.postimg.cc/MHPQwHSf/5jan25.jpg",
+  "https://i.postimg.cc/4ddScrbr/5jan25b.jpg",
+  "https://i.postimg.cc/6p1wZCDN/6jan26b.jpg",
+  "https://i.postimg.cc/XJ1wSHPm/6jan26c.jpg",
+  "https://i.postimg.cc/R0NhYbGQ/7jan26.jpg",
+  "https://i.postimg.cc/ryHNX3x8/10jan26.jpg",
+  "https://i.postimg.cc/CM2sTXky/10jan26b.jpg",
+  "https://i.postimg.cc/h4Y1W6TK/8dec26.jpg",
+  "https://i.postimg.cc/t4xTcbM3/10jan26c.jpg",
+  "https://i.postimg.cc/nzrfqs58/21jan26.jpg",
+  "https://i.postimg.cc/gJjb3w7Q/21jan26b.jpg",
+  "https://i.postimg.cc/MHtb7wd8/22jan26.jpg",
+  "https://i.postimg.cc/0jZdYvc5/22jan26b.jpg",
+  "https://i.postimg.cc/nrTY4x0Z/23jan26.jpg",
+  "https://i.postimg.cc/901td2J2/24jan26.jpg",
+  "https://i.postimg.cc/L5vBtSNm/24jan26b.jpg",
+  "https://i.postimg.cc/jjPsLSSj/11dec25c.jpg",
+  "https://i.postimg.cc/tRmLGH98/30nov25b.jpg",
+  "https://i.postimg.cc/kgN1Grd2/31dec25c.jpg",
+  "https://i.postimg.cc/Y2nKbyLF/1feb26.jpg",
+  "https://i.postimg.cc/qBbVjZ63/25jan26.jpg",
+  "https://i.postimg.cc/bNZXMH1k/26jan26.jpg",
+  "https://i.postimg.cc/gkx95q3X/28jan26.jpg",
+  "https://i.postimg.cc/658sSLCv/29jan26.jpg",
+  "https://i.postimg.cc/pXmN7YK9/29jan26b.jpg",
+  "https://i.postimg.cc/J76VPdHB/30jan26.jpg",
+  "https://i.postimg.cc/DfjkBY4s/31jan26.jpg",
+  "https://i.postimg.cc/3JtZyfPN/2feb26.jpg",
+  "https://i.postimg.cc/3wvjc8Wv/2feb26b.jpg",
+  "https://i.postimg.cc/bwd91HPP/3feb26.jpg",
+  "https://i.postimg.cc/2SJFGbkg/3feb26b.jpg",
+  "https://i.postimg.cc/vZDt5LsW/4feb26.jpg",
+  "https://i.postimg.cc/vZjLhg8Q/5feb26.jpg",
+  "https://i.postimg.cc/2SJFGbjp/6feb26.jpg",
+    "https://i.postimg.cc/sXsyyvLM/11may26.jpg",
+  "https://i.postimg.cc/YS1kJ1bJ/12apr26.jpg",
+  "https://i.postimg.cc/fLDZZJPy/12may26.jpg",
+  "https://i.postimg.cc/3RY77dqW/12may26b.jpg",
+  "https://i.postimg.cc/d08vz84p/13feb26.jpg",
+  "https://i.postimg.cc/mrQR0Q8V/15apr26.jpg",
+  "https://i.postimg.cc/MGyxhydg/15feb26.jpg",
+  "https://i.postimg.cc/C170Kwyt/18apr26.jpg",
+  "https://i.postimg.cc/vBbMMcKb/20may26c.jpg",
+  "https://i.postimg.cc/DzqFtqxm/20may26e.jpg",
+  "https://i.postimg.cc/xdKYWK6n/20may26f.jpg",
+  "https://i.postimg.cc/CKjYWjm3/22feb26.jpg",
+  "https://i.postimg.cc/d08vz85s/23may26e.jpg",
+  "https://i.postimg.cc/tTkbg902/25apr26.jpg",
+  "https://i.postimg.cc/50gJtfc3/30apr26.jpg",
+  "https://i.postimg.cc/C170Kwyf/30apr26b.jpg",
+  "https://i.postimg.cc/43zZrzWg/30may26b.jpg",
+  "https://i.postimg.cc/HLQHfQ6m/7feb26.png"
+];
+
+const gallery = document.getElementById("gallery");
+
+images.forEach(url => {
+  const img = document.createElement("img");
+  img.src = url;
+  img.loading = "lazy";
+  gallery.appendChild(img);
+});
+</script>
+</body>
+</html>

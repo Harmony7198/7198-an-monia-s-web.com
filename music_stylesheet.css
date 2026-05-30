@@ -1,0 +1,213 @@
+/* BASE */
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #003049;
+  margin: 0;
+  background-image: 
+    linear-gradient(rgba(244, 237, 228, 0.85), rgba(244, 237, 228, 0.85)),
+    url("https://i.postimg.cc/j2Ftb10m/wallpaper7.jpg");
+  background-repeat: repeat;
+  background-size: auto, 280px;
+}
+/* HEADER */
+.header {
+  display: block;
+  text-align: center;
+  padding: 30px 20px 10px;
+  text-decoration: none;
+}
+.header h1 {
+  font-size: 50px;
+  letter-spacing: 0.25em;
+  font-weight: 300;
+  color: #C1121F;
+  margin: 0;
+}
+.subtitle {
+  font-size: 20px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #669BBC;
+  margin-top: 6px;
+}
+/* LAYOUT */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 60px auto;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+/* SIDEBAR */
+.sidebar {
+  width: 200px;
+  height: 70vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: sticky;
+  top: 40px;
+  padding: 15px;
+  background: rgba(255, 253, 248, 0.6);
+  border: 1px solid #780000;
+}
+/* sidebar text */
+.sidebar h1 {
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #669BBC;
+  margin-bottom: 12px;
+}
+.sidebar a {
+  display: block;
+  margin: 8px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #AE1F23;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.sidebar a:hover {
+  color: #003049;
+  transform: translateX(4px);
+}
+.sidebar hr {
+  border: none;
+  border-top: 2px solid #780000;
+  margin: 18px 0;
+  width: 60%;
+}
+/* scrollbar */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background: #780000;
+}
+/* CONTENT */
+.content {
+  max-width: 620px;
+  padding: 10px;
+  background: rgba(255, 253, 248, 0.6);
+}
+.content h2 {
+  color: #C1121F;
+  font-size: 22px;
+  font-weight: normal;
+  border-bottom: 2px solid #780000;
+  padding-bottom: 5px;
+}
+.content p {
+  line-height: 1.8;
+  color: #003049;
+}
+/* ENTRY BOX */
+.entry {
+  margin-top: 25px;
+  padding: 20px;
+  background: rgba(255, 253, 248, 0.9);
+  border: 1px solid #780000;
+  /* remove rounded for your aesthetic */
+  border-radius: 0;
+}
+.song-title {
+  color: #669BBC;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 30px;
+}
+/* BUTTON */
+.content button {
+  margin-top: 5px;
+  border: none;
+  background: none;
+  color: #AE1F23;
+  cursor: pointer;
+}
+.content button:hover {
+  text-decoration: underline;
+  color: #003049;
+}
+/* TAGS */
+.tags a {
+  margin-right: 8px;
+  text-decoration: none;
+  color: #AE1F23;
+  font-size: 13px;
+}
+.tags a:hover {
+  text-decoration: underline;
+  color: #003049;
+}
+/* SECRET BOX */
+.secret-box {
+  margin-top: 10px;
+}
+.secret-box input {
+  padding: 5px;
+  font-family: inherit;
+  border: 1px solid #780000;
+  background: #fff;
+}
+.secret-box button {
+  padding: 5px 10px;
+  margin-left: 5px;
+}
+/* SONG TRANSLATION TABLE */
+.content table.song-translation {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  color: #003049;
+  background-color: #fff;
+  border: 1px solid #780000;
+}
+.content table.song-translation caption {
+  font-weight: normal;
+  color: #C1121F;
+  padding: 10px;
+  letter-spacing: 0.1em;
+}
+/* header */
+.content table.song-translation thead {
+  background-color: #f9f6f2;
+}
+.content table.song-translation th {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #780000;
+  color: #AE1F23;
+  font-size: 13px;
+}
+/* cells */
+.content table.song-translation td {
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 13px;
+  line-height: 1.6;
+  vertical-align: top;
+}
+/* hover */
+.content table.song-translation tr:hover {
+  background-color: #f4f6f4;
+}
+/* make lyrics feel airy */
+.content table.song-translation td:first-child {
+  width: 50%;
+  font-style: italic;
+}
+.content table.song-translation td:last-child {
+  width: 50%;
+}
+/* FOOTER */
+.footer {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 20px;
+  color: #669BBC;
+  border-top: 1px solid #780000;
+  padding-top: 15px;
+  letter-spacing: 0.05em;
+}

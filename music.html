@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>music</title>
+<LINK REL="stylesheet" HREF="music_stylesheet.css">
+</head>
+<body>
+ <a href="index.html" class="header">
+      <h1>祥</h1>
+      <div class="subtitle">my honest thoughts</div>
+</a>
+  <div class="container">
+    <div class="sidebar">
+      <h1>archive</h1>
+      <a href="about.html">about</a>
+      <a href="journal.html">journal</a>
+      <a href="music.html">music</a>
+      <a href="works.html">works</a>
+      <a href="log.html">log</a>
+      <a href="inspiration.html">inspiration</a>
+      <hr>
+      <a href="contact.html">contact</a>
+    </div>
+    <div class="content">
+      <h2>music</h2>
+      <p>what i listen to ((wip))</p>
+<!-- FILTER SYSTEM -->
+<p id="filter"><strong>Filter:</strong> 
+<span id="activeTag"></span></p>
+<button onclick="filterPosts('japanese')">japanese</button>
+<button onclick="filterPosts('french')">french</button>
+<button onclick="filterPosts('lio')">lio</button>
+<button onclick="filterPosts('oasis')">oasis</button>
+<button onclick="showAll()">Show All</button>
+<hr>
+<!-- 21 Mar 26 -->
+  <div class="entry" data-tags="lio french"> 
+    <div class="tags">
+    Tags:
+    <a onclick="filterPosts('japanese')"> #japanese</a>
+    </div>     
+  <div class="song-title">銀の雨</div>
+  <input type="password" class="pw" placeholder="Enter password">
+  <button onclick="unlock(this)">Unlock</button>
+
+  <div class="secret" style="display:none;">
+       <p><a href="https://www.youtube.com/watch?v=Fv8pm50YfHU">Silver rain</a> give nostalgic feelings</p>
+    <table class="song-translation">
+  <caption>銀の雨 / Gin no ame (Silver Rain)</caption>
+  <thead>
+    <tr>
+      <th>Original</th>
+      <th>Translation (EN)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>貴方と暮らした わずかな時間</td>
+      <td>The little time I had with you</td>
+    </tr>
+    <tr>
+      <td>通り過ぎれば 楽しかったわ</td>
+      <td>When I look back, it was a pleasure</td>
+    </tr>
+    <tr>
+      <td>これ以上 私が そばに居たなら</td>
+      <td>If I stayed with you any longer</td>
+    </tr>
+    <tr>
+      <td>あなたが だめに なってしまうのね</td>
+      <td>I'm gonna ruin you</td>
+    </tr>
+    <tr>
+      <td>いつの間にか 降り出した雨</td>
+      <td>Before I knew it, the rain began to fall</td>
+    </tr>
+    <tr>
+      <td>窓の外は 銀の雨が降る</td>
+      <td>Outside the window, silver rain is falling</td>
+    </tr>
+    <tr>
+      <td>貴方のそばで 貴方のために</td>
+      <td>Living by your side, and for your sake</td>
+    </tr>
+    <tr>
+      <td>暮らせた だけで 幸せだけど</td>
+      <td>I'm happy just to do it</td>
+    </tr>
+    <tr>
+      <td>せめて 貴方の さびしさ少し</td>
+      <td>But I wish I could understand</td>
+    </tr>
+    <tr>
+      <td>わかってあげれば よかったのに</td>
+      <td>of your loneliness a little more</td>
+    </tr>
+    <tr>
+      <td>貴方がくれた 思い出だけが</td>
+      <td>Only the memories you gave me</td>
+    </tr>
+    <tr>
+      <td>ひとつふたつ 銀の雨の中</td>
+      <td>One or two in the silver rain</td>
+    </tr>
+    <tr>
+    	<td>ごめんと私に 言ってくれたのは</td>
+    	<td>That you told me you were sorry</td>
+    </tr>
+    <tr>
+    	<td>貴方の最後の やさしさですね</td>
+    	<td>It was your last act of kindness</td>
+    </tr>
+    <tr>
+    	<td>いいのよ貴方に ついて来たのは</td>
+    	<td>It's okay, that I followed you</td>
+    </tr>
+    <tr>
+    	<td>みんな私の わがままだから</td>
+    	<td>It was all selfishness on my part</td>
+    </tr>
+    <tr>
+    	<td>貴方の夢が 叶う様に</td>
+    	<td>I pray for your dreams to come true</td>
+    </tr>
+    <tr>
+    	<td>祈る心に 銀の雨が降る</td>
+    	<td>Silver rain falls on my praying heart</td>
+    </tr>
+    <tr>
+    	<td>銀の雨が降る</td>
+    	<td>Silver rain is falling</td>
+    </tr>
+        <tr>
+    	<td>銀の雨が降る</td>
+    	<td>Silver rain is falling</td>
+    </tr>
+  </tbody>
+  </table>
+  </div>
+  </div>
+<!-- 19 Mar 26 -->
+  <div class="entry" data-tags="lio french"> 
+    <div class="tags">
+    Tags:
+    <a onclick="filterPosts('lio')"> #lio</a>
+    <a onclick="filterPosts('french')"> #french</a>
+    </div>     
+  <div class="song-title">Amoureux Solitaires</div>
+  <input type="password" class="pw" placeholder="Enter password">
+  <button onclick="unlock(this)">Unlock</button>
+
+  <div class="secret" style="display:none;">
+       <p>I found <a href="https://www.youtube.com/watch?v=GX6YfT1mM9w">this catchy french song</a> by coincidence</p>
+  </div>
+  </div>
+<!-- 10 Jan 26 -->
+  <div class="entry" data-tags="oasis"> 
+    <div class="tags">
+    Tags:
+    <a onclick="filterPosts('oasis')"> #oasis</a>
+  </div>
+  <div class="song-title">Don't look back in anger</div>
+  <input type="password" class="pw" placeholder="Enter password">
+  <button onclick="unlock(this)">Unlock</button>
+
+  <div class="secret" style="display:none;">
+       <p><a href="https://www.youtube.com/watch?v=YZG7z4FOn0g">The lyrics</a> are what I want to yell at myself right now</p>
+       <p>been there, done that, I still yearn for more. My time is slipping away and my youth is ruined... I try to say it's okay but it doesn't work...</p>
+       </div> 
+  </div>     
+<!-- 3 Jan 26 -->
+  <div class="entry" data-tags="oasis"> 
+    <div class="tags">
+    Tags:
+    <a onclick="filterPosts('oasis')">#oasis</a>
+  </div>
+  <div class="song-title">Whatever</div>
+  <input type="password" class="pw" placeholder="Enter password">
+  <button onclick="unlock(this)">Unlock</button>
+  <div class="secret" style="display:none;">
+       <p>This mashup version gives me the feelings similar to when I went biking, hiking up the mountains... it feels like a dream. I'm sad again today...</p>
+       <a href="https://www.youtube.com/watch?v=ktZ9JmirZBs">Whatever/Octopus's Garden</a>
+</div>
+  </div>
+    </div>
+    </div>
+        <div class="footer">an-monia · 祥 · independent archive</div>
+
+<!-- SCRIPT -->
+<script src="music_script.js"></script>
+</body>
+</html>

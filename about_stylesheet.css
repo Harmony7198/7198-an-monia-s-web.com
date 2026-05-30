@@ -1,0 +1,107 @@
+/* ABOUT PAGE STYLESHEET */
+/* BASE */
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #003049;
+  margin: 0;
+
+  background-image: 
+    linear-gradient(rgba(244, 237, 228, 0.85), rgba(244, 237, 228, 0.85)),
+    url("https://i.postimg.cc/wvnmjwpR/wallpaper4.jpg");
+
+  background-repeat: repeat;
+  background-size: auto, 280px;
+}
+/* WRAPPER */
+.wrapper {
+  max-width: 720px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+/* HEADER */
+.header {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 30px;
+}
+.header h1 {
+  font-size: 50px;
+  letter-spacing: 0.25em;
+  font-weight: 300;
+  color: #C1121F;
+  margin: 0;
+}
+.subtitle {
+  font-size: 20px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #669BBC;
+  margin-top: 6px;
+}
+/* NAV (slightly boxed) */
+.nav {
+  text-align: center;
+  margin-bottom: 50px;
+
+  padding: 12px;
+
+  background: rgba(255, 253, 248, 0.9);
+  border: 1px solid #780000;
+}
+.nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #AE1F23;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+.nav a:hover {
+  text-decoration: underline;
+  color: #003049;
+}
+/* CONTENT (MAIN CARD) */
+.content {
+  line-height: 1.8;
+  font-size: 15px;
+
+  padding: 30px;
+
+  background: rgba(255, 253, 248, 0.9);
+  border: 1px solid #780000;
+}
+/* TITLE */
+.content h2 {
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  color: #C1121F;
+
+  border-bottom: 1px solid #780000;
+  padding-bottom: 6px;
+}
+/* TEXT */
+.content p {
+  margin: 12px 0;
+}
+.content strong {
+  color: #AE1F23;
+  font-weight: normal;
+}
+/* DIVIDER */
+hr {
+  border: none;
+  border-top: 1px solid #780000;
+  margin: 30px auto;
+  width: 60%;
+}
+/* FOOTER */
+.footer {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 20px;
+  color: #669BBC;
+  border-top: 1px solid #780000;
+  padding-top: 15px;
+  letter-spacing: 0.05em;
+}
