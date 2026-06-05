@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>works</title>
-<link rel="stylesheet" href="works_stylesheet.css">
+<link rel="stylesheet" href="css/works_stylesheet.css">
 </head>
 <body>
  <a href="index.html" class="header">
@@ -29,31 +29,29 @@
      <!-- FILTER SYSTEM -->
 <p id="filter">
   <strong>Filter:</strong>
+  <span id="activeTag"> </span>
   <button class="tag" onclick="filterPosts('bantaka')">#bantaka</button>
   <button class="tag" onclick="filterPosts('gintaka')">#gintaka</button>
   <button class="tag" onclick="filterPosts('zurataka')">#zurataka</button>
-    <button class="tag" onclick="filterPosts('artsummary')">#artsummary</button>
+  <button class="tag" onclick="filterPosts('artsummary')">#artsummary</button>
+  <button onclick="showAll()">Show All</button>
 </p>
-<button onclick="showAll()">Show All</button>
-     <hr>
+<hr>
   <!-- 31 May 26 -->
-<div class="entry" data-tags="gintaka">
+  <div class="entry" data-tags="gintaka">
     <div class="tags">
-        Tags:
-        <a onclick="filterPosts('gintaka')">#gintaka</a>
+      Tags:
+      <a onclick="filterPosts('gintaka')">#gintaka</a>
     </div>
     <div class="date">31 May 26</div>
-    <img
-        src="https://i.postimg.cc/9MhJjQ6g/31may26.jpg"
-        alt="mermay2026"
-        class="entry-image">
-        <p>The color turn out to be quite nice, soft and fluffy like a cozy blanket. It's raining outside, looking at this drawing keep me warm.</p>
-        <p>I said that I gonna work on this site instead of procrastinating but I'm still not sure if it's a good idea. 
-          Coding is complicated, it drives me insane. Ironically, among my close friends, I'm the only one who don't know how to code.</p>
-          <p>I keep thinking about how I am the only one being left behind. I don't see where I am going anymore.</p>
-          <p>I will just keep trying, no matter how hard it gets.</p>
-        </div>
-  <!-- 30 May 26 -->
+    <img src="https://i.postimg.cc/9MhJjQ6g/31may26.jpg" alt="mermay2026" class="entry-image">
+    <p>The color turn out to be quite nice, soft and fluffy like a cozy blanket. It's raining outside, looking at this drawing keep me warm.</p>
+    <p>I said that I gonna work on this site instead of procrastinating but I'm still not sure if it's a good idea. 
+      Coding is complicated, it drives me insane. Ironically, among my close friends, I'm the only one who don't know how to code.</p>
+    <p>I keep thinking about how I am the only one being left behind. I don't see where I am going anymore.</p>
+    <p>I will just keep trying, no matter how hard it gets.</p>
+  </div>
+<!-- 30 May 26 -->
   <div class="entry" data-tags="artsummary">
     <div class="tags">
       Tags:
@@ -61,7 +59,7 @@
     </div>
     <div class="date">30 May 26</div>
     <h3>
-      <a href="posts/30may26_works.html">
+      <a href="posts/works_posts/30may26_works.html">
       art summary
       </a>
     </h3>
@@ -70,25 +68,21 @@
 
     <!-- 19mar26 -->
   <div class="entry" data-tags="oc resources"> 
-  <div class="tags">
-    Tags:
-    <a onclick="filterPosts('oc')"> #oc</a>
-    <a onclick="filterPosts('resources')"> #recources</a>
-  </div>
-
-  <div class="date">19 Mar 26</div>
-  <h3>
-    <a href="posts/19mar26_works.html">
-    Retro Effect Website
-    </a>
-  </h3>
+    <div class="tags">
+      Tags:
+      <a onclick="filterPosts('oc')"> #oc</a>
+      <a onclick="filterPosts('resources')"> #recources</a>
+    </div>
+    <div class="date">19 Mar 26</div>
+    <h3>
+      <a href="posts/works_posts/19mar26_works.html">Retro Effect Website</a>
+    </h3>
   <p>An website that adds retro effect on your image</p>
   </div>
-    </div>
-    </div></div>
-        <div class="footer">an-monia · 祥 · independent archive</div>   
-      
+</div>
+</div>
+<div class="footer">an-monia · 祥 · independent archive</div>         
 <!-- SCRIPT -->
-<script src="works_script.js"></script>
+<script src="script/works_script.js"></script>
 </body>
 </html>
